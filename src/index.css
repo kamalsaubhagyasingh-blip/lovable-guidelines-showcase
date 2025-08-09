@@ -8,34 +8,34 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 247 250 252;
+    --foreground: 30 41 59;
     
-    /* Professional compliance color palette */
-    --primary: 210 100% 45%;
-    --primary-foreground: 0 0% 98%;
-    --primary-light: 210 100% 95%;
+    /* YourDOST Brand Colors */
+    --primary: 244 63 94;
+    --primary-foreground: 255 255 255;
     
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220 8.9% 46.1%;
+    --yourdost-purple: 79 70 229;
+    --yourdost-purple-light: 238 242 255;
+    --yourdost-blue: 59 130 246;
     
-    --accent: 210 40% 98%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --golden-yellow: 251 191 36;
+    --golden-yellow-light: 254 249 195;
+    --golden-yellow-bg: 255 247 194;
     
-    --compliance-blue: 210 100% 45%;
-    --compliance-light: 210 100% 97%;
-    --stake-warning: 25 95% 53%;
-    --stake-warning-light: 25 100% 96%;
+    --success-green: 34 197 94;
+    --card-background: 255 255 255;
     
-    /* Gradients */
-    --gradient-bg: linear-gradient(135deg, hsl(210 40% 98%) 0%, hsl(220 40% 96%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 99%) 100%);
+    /* Semantic tokens */
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+    --border: 226 232 240;
     
     /* Shadows */
-    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
-    --shadow-elevated: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     
-    /* Border radius */
     --radius: 0.5rem;
 
     --card: 0 0% 100%;

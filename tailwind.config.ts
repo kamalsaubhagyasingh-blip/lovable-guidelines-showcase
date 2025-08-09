@@ -30,15 +30,22 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-					light: 'hsl(var(--primary-light))',
 				},
-				compliance: {
-					blue: 'hsl(var(--compliance-blue))',
-					light: 'hsl(var(--compliance-light))',
+				yourdost: {
+					purple: 'hsl(var(--yourdost-purple))',
+					'purple-light': 'hsl(var(--yourdost-purple-light))',
+					blue: 'hsl(var(--yourdost-blue))',
 				},
-				stake: {
-					warning: 'hsl(var(--stake-warning))',
-					light: 'hsl(var(--stake-warning-light))',
+				golden: {
+					yellow: 'hsl(var(--golden-yellow))',
+					light: 'hsl(var(--golden-yellow-light))',
+					bg: 'hsl(var(--golden-yellow-bg))',
+				},
+				success: {
+					green: 'hsl(var(--success-green))',
+				},
+				card: {
+					background: 'hsl(var(--card-background))',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',

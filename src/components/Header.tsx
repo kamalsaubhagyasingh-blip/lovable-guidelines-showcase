@@ -1,15 +1,22 @@
 import YourDOSTLogo from "@/assets/yourdost-logo.svg";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-sm border-b border-border">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center">
-          <img 
-            src={YourDOSTLogo} 
-            alt="YourDOST" 
-            className="h-8 w-auto"
-          />
+    <header className="bg-card-background shadow-sm border-b border-border">
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <img 
+              src={YourDOSTLogo} 
+              alt="YourDOST Logo" 
+              className="h-8 w-auto"
+            />
+            <span className="text-xl font-semibold text-foreground">YourDOST</span>
+          </div>
+          <Button className="bg-yourdost-purple text-white hover:bg-yourdost-purple/90 px-6 py-2 rounded-full font-medium">
+            Book a Compliance Call
+          </Button>
         </div>
       </div>
     </header>
