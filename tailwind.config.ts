@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +29,16 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					light: 'hsl(var(--primary-light))',
+				},
+				compliance: {
+					blue: 'hsl(var(--compliance-blue))',
+					light: 'hsl(var(--compliance-light))',
+				},
+				stake: {
+					warning: 'hsl(var(--stake-warning))',
+					light: 'hsl(var(--stake-warning-light))',
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
