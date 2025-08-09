@@ -8,78 +8,42 @@
 
 @layer base {
   :root {
-    --background: 247 250 252;
-    --foreground: 30 41 59;
-    
-    /* YourDOST Brand Colors */
-    --primary: 244 63 94;
-    --primary-foreground: 255 255 255;
-    
-    --yourdost-purple: 79 70 229;
-    --yourdost-purple-light: 238 242 255;
-    --yourdost-blue: 59 130 246;
-    
-    --golden-yellow: 251 191 36;
-    --golden-yellow-light: 254 249 195;
-    --golden-yellow-bg: 255 247 194;
-    
-    --success-green: 34 197 94;
-    --card-background: 255 255 255;
-    
-    /* Semantic tokens */
-    --muted: 241 245 249;
-    --muted-foreground: 100 116 139;
-    --border: 226 232 240;
-    
+    /* Background and foreground */
+    --background: 0 0% 99%;
+    --foreground: 222 47% 11%;
+
+    /* Brand colors (HSL) */
+    --yourdost-purple: 255 64% 48%;
+    --yourdost-purple-light: 255 100% 97%;
+    --yourdost-blue: 220 91% 56%;
+
+    /* Accent yellows */
+    --golden-yellow: 45 97% 55%;
+    --golden-yellow-light: 45 92% 85%;
+    --golden-yellow-bg: 45 100% 92%;
+
+    /* Semantic */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 84% 5%;
+
+    /* Cards */
+    --card-background: 0 0% 100%;
+
+    /* Page gradient */
+    --page-gradient: radial-gradient(1200px 500px at 20% 0%, hsl(255 100% 98%) 0%, transparent 40%),
+                     radial-gradient(800px 300px at 90% 10%, hsl(45 100% 95%) 0%, transparent 35%),
+                     hsl(var(--background));
+
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    
-    --radius: 0.5rem;
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Radius */
+    --radius: 0.75rem;
   }
 
   .dark {
@@ -92,32 +56,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -127,6 +66,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    background: var(--page-gradient);
+    color: hsl(var(--foreground));
   }
 }

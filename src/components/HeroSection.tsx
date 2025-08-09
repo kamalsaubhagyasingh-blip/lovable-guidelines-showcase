@@ -2,6 +2,14 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  const features = [
+    "24×7 support by qualified psychologists (chat, audio, video)",
+    "On-campus face-to-face counselling",
+    "Dedicated telephonic helpline and crisis response",
+    "Workshops, webinars, and staff sensitisation",
+    "Access to a 900+ expert network",
+  ];
+
   return (
     <section className="max-w-7xl mx-auto px-6 py-12">
       <div className="grid lg:grid-cols-3 gap-8 items-start">
@@ -20,39 +28,43 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            India's Supreme Court has issued 15 nationwide directives to curb 
-            student suicides and strengthen mental health support across 
-            schools, colleges, universities, and coaching centres. YourDOST 
+            India's Supreme Court has issued 15 nationwide directives to curb
+            student suicides and strengthen mental health support across
+            schools, colleges, universities, and coaching centres. YourDOST
             operationalizes compliance—end-to-end.
           </p>
 
-          {/* Features List */}
-          <div className="space-y-4">
-            {[
-              "24×7 support by qualified psychologists (chat, audio, video)",
-              "On-campus face-to-face counselling", 
-              "Dedicated telephonic helpline and crisis response",
-              "Workshops, webinars, and staff sensitisation",
-              "Access to a 900+ expert network"
-            ].map((feature, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="flex-shrink-0 w-5 h-5 bg-success-green rounded-full flex items-center justify-center mt-0.5">
-                  <Check className="w-3 h-3 text-white" />
+          {/* Features List Card */}
+          <div className="bg-card-background border border-border rounded-2xl p-6 shadow-[var(--shadow-md)]">
+            <div className="space-y-4">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 bg-yourdost-purple/10">
+                    <Check className="w-3.5 h-3.5 text-yourdost-purple" />
+                  </div>
+                  <span className="text-foreground">{feature}</span>
                 </div>
-                <span className="text-foreground">{feature}</span>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Side Panel */}
         <div className="lg:col-span-1">
-          <div className="bg-golden-bg border border-golden-yellow/30 rounded-xl p-6">
+          <div
+            className="rounded-xl p-6 border border-golden-yellow/40 shadow-[var(--shadow-md)]"
+            style={{
+              background:
+                "radial-gradient(120px 60px at 20% 80%, hsl(var(--golden-yellow-light)) 0%, transparent 70%)," +
+                "radial-gradient(160px 80px at 90% 20%, hsl(var(--golden-yellow-light)) 0%, transparent 70%)," +
+                "hsl(var(--golden-yellow-bg))",
+            }}
+          >
             <h2 className="text-xl font-semibold text-foreground mb-4">
               We help leading institutes create Happier Campuses.
             </h2>
             <p className="text-muted-foreground mb-6">
-              Our technology platform offers stigma-free therapeutic solutions. 
+              Our technology platform offers stigma-free therapeutic solutions.
               Join the leaders who have created happier campuses for{" "}
               <strong className="text-foreground">10+ million lives.</strong>
             </p>
