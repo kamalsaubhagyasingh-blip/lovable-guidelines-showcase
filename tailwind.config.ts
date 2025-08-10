@@ -44,9 +44,6 @@ export default {
 				success: {
 					green: 'hsl(var(--success-green))',
 				},
-				card: {
-					background: 'hsl(var(--card-background))',
-				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
@@ -69,7 +66,8 @@ export default {
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					foreground: 'hsl(var(--card-foreground))',
+					background: 'hsl(var(--card-background))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

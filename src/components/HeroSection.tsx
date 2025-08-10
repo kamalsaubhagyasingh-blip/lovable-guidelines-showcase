@@ -56,7 +56,7 @@ const HeroSection = () => {
 
 
       {/* Operational Institutes Card */}
-      <Card className="mt-10 bg-card-background border border-border rounded-2xl shadow-[var(--shadow-md)]">
+      <Card className="mt-10 bg-muted border border-border rounded-2xl shadow-[var(--shadow-md)]">
         <CardContent className="p-6">
           <p className="text-base md:text-lg leading-7 text-muted-foreground">
             We are operational in leading institutes of the country like IIT Delhi, IIT Roorkee, IIT Madras, IIM Bangalore, IIM Kashipur, IIIT Delhi, NIT Delhi, JKLU Jaipur, Shiv Nadar University, Ahmedabad University, LPU Jalandhar, Gateway Education, BIMTech, Rishihood University, IMI Delhi, IMT Ghaziabad, Avantika University, SRM University, VIT University, O.P. Jindal Global University, IISC Bangalore, TIFR where we have shown great results in fostering emotional well-being of students and staff and supplementing the existing campus wellness efforts.

@@ -30,6 +30,8 @@
     --ring: 222 84% 5%;
 
     /* Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
     --card-background: 0 0% 100%;
 
     /* Page gradient */
