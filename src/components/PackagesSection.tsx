@@ -33,7 +33,7 @@ const PackagesSection = () => {
   const packages = [
     {
       title: "Basic",
-      price: "₹1.5 Lakh / Year",
+      price: "₹2L / Year",
       features: [
         "Dedicated Telephonic Helpline",
         "Mental Protocol Guidance",
@@ -44,7 +44,7 @@ const PackagesSection = () => {
     },
     {
       title: "Premium", 
-      price: "₹5 Lakh / Year",
+      price: "₹5L / Year",
       features: [
         "Everything in Basic",
         "24×7 Counselling (Chat/Audio/Video)",
@@ -56,11 +56,10 @@ const PackagesSection = () => {
     },
     {
       title: "Premium Plus",
-      price: "₹15 Lakh / Year", 
+      price: "₹12L / Year", 
       features: [
         "Everything in Premium",
         "Weekly On-Campus Counselling",
-        "Career Counselling (Students & Parents)",
         "Annual Compliance Report Preparation",
         "Biannual Faculty Sensitisation Training",
         "Crisis Management Protocol"
