@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 const HeroSection = () => {
   const features = [
@@ -74,6 +75,68 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Trust Built With Leaders */}
+      <div role="region" aria-labelledby="trust-leaders" className="mt-12">
+        <h2 id="trust-leaders" className="text-2xl font-semibold text-foreground text-center mb-8">
+          Trust Built With Leaders
+        </h2>
+
+        <div className="grid gap-8 sm:grid-cols-3">
+          <article className="text-center">
+            <div className="mx-auto mb-4 h-20 w-20 rounded-full ring-2 ring-border overflow-hidden">
+              <img src="/placeholder.svg" alt="Leader portrait placeholder" className="h-full w-full object-cover" loading="lazy" />
+            </div>
+            <h3 className="font-semibold text-lg text-foreground">Hon. President Droupadi Murmu</h3>
+            <p className="text-muted-foreground mt-1">Invited to present our work at the Rashtrapati Bhavan</p>
+          </article>
+
+          <article className="text-center">
+            <div className="mx-auto mb-4 h-20 w-20 rounded-full ring-2 ring-border overflow-hidden">
+              <img src="/placeholder.svg" alt="Leader portrait placeholder" className="h-full w-full object-cover" loading="lazy" />
+            </div>
+            <h3 className="font-semibold text-lg text-foreground">Hon. PM Narendra Modi</h3>
+            <p className="text-muted-foreground mt-1">Presented Mental Health Policy recommendations to the Prime Minister</p>
+          </article>
+
+          <article className="text-center">
+            <div className="mx-auto mb-4 h-20 w-20 rounded-full ring-2 ring-border overflow-hidden">
+              <img src="/placeholder.svg" alt="Institution emblem placeholder" className="h-full w-full object-cover" loading="lazy" />
+            </div>
+            <h3 className="font-semibold text-lg text-foreground">Whitehouse/United Nations</h3>
+            <p className="text-muted-foreground mt-1">Invited to present our parenthood program at the White House (U.S.A)</p>
+          </article>
+        </div>
+
+        <div className="mt-10 grid gap-4 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="rounded-full border border-border px-4 py-2 text-center">
+            <strong className="text-foreground">National Startup Awards</strong>
+            <div className="text-muted-foreground text-sm">Health & Wellness</div>
+          </div>
+          <div className="rounded-full border border-border px-4 py-2 text-center">
+            <strong className="text-foreground">IHW Gold Award</strong>
+            <div className="text-muted-foreground text-sm">Mental Well Being</div>
+          </div>
+          <div className="rounded-full border border-border px-4 py-2 text-center">
+            <strong className="text-foreground">Forbes</strong>
+            <div className="text-muted-foreground text-sm">30 Under 30 Asia</div>
+          </div>
+          <div className="rounded-full border border-border px-4 py-2 text-center hidden lg:block">
+            <strong className="text-foreground">More Recognitions</strong>
+            <div className="text-muted-foreground text-sm">Across India & global</div>
+          </div>
+        </div>
+      </div>
+
+      {/* Operational Institutes Card */}
+      <Card className="mt-8">
+        <CardContent className="pt-6">
+          <p className="text-sm leading-7 text-muted-foreground">
+            We are operational in leading institutes of the country like IIT Delhi, IIT Roorkee, IIT Madras, IIM Bangalore, IIM Udaipur, IIM Kashipur, IIIT Delhi, NIT Delhi, JKLU Jaipur, Shiv Nadar University, Ahmedabad University, LPU Jalandhar, Gateway Education, BIMTech, Rishihood University, IMI Delhi, IMT Ghaziabad, Avantika University, SRM University, VIT University, O.P. Jindal Global University where we have shown great results in fostering emotional well-being of students and staff and supplementing the existing campus wellness efforts.
+          </p>
+        </CardContent>
+      </Card>
+
     </section>
   );
 };
