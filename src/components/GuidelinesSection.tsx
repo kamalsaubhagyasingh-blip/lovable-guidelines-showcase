@@ -11,7 +11,7 @@ const GuidelinesSection = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12">
       <h2 className="text-3xl font-bold text-foreground mb-8">
-        Supreme Court Guidelines - In Brief
+        Supreme Court’s 15 Mental Health Guidelines
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
