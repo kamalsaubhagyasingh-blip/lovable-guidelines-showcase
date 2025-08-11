@@ -47,7 +47,14 @@ const HeroSection = () => {
               Join the leaders who have created happier campuses for{" "}
               <strong className="text-foreground">10+ million lives.</strong>
             </p>
-            <Button className="bg-yourdost-purple text-white hover:bg-yourdost-purple/90 w-full rounded-lg font-medium">
+            <Button
+              onClick={() => window.Tally?.openPopup('3EO7N4', {
+                layout: 'modal',
+                width: 700,
+                hiddenFields: { ref: 'hero', url: window.location.href },
+              })}
+              className="bg-yourdost-purple text-white hover:bg-yourdost-purple/90 w-full rounded-lg font-medium"
+            >
               Request a Callback
             </Button>
           </div>
