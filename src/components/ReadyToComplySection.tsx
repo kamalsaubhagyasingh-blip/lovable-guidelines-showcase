@@ -10,14 +10,7 @@ const ReadyToComplySection = () => {
         <p className="text-lg text-muted-foreground mb-8">
           We'll audit current processes, define gaps, and propose a compliance roadmap.
         </p>
-        <Button
-          onClick={() => window.Tally?.openPopup('3EO7N4', {
-            layout: 'modal',
-            width: 700,
-            hiddenFields: { ref: 'ready-to-comply', url: window.location.href },
-          })}
-          className="bg-yourdost-purple text-white hover:bg-yourdost-purple/90 px-8 py-3 rounded-lg font-medium text-lg"
-        >
+        <Button className="bg-yourdost-purple text-white hover:bg-yourdost-purple/90 px-8 py-3 rounded-lg font-medium text-lg">
           Get Started
         </Button>
       </div>

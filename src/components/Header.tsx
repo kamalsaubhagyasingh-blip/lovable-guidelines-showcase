@@ -9,14 +9,7 @@ const Header = () => {
             <span className="text-xl font-semibold text-foreground">
           </span>
           </div>
-          <Button
-            onClick={() => window.Tally?.openPopup('3EO7N4', {
-              layout: 'modal',
-              width: 700,
-              hiddenFields: { ref: 'header', url: window.location.href },
-            })}
-            className="bg-yourdost-purple text-white hover:bg-yourdost-purple/90 px-6 py-2 rounded-full font-medium"
-          >
+          <Button className="bg-yourdost-purple text-white hover:bg-yourdost-purple/90 px-6 py-2 rounded-full font-medium">
             Book a Compliance Call
           </Button>
         </div>
